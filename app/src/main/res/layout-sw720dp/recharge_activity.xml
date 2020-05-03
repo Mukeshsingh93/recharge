@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="android.view.View"/>
+
+        <variable
+            name="viewModel"
+            type="com.softgates.recharge.reguser.RegisterViewModel" />
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:text="Name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/green_rect"
+        android:hint="Name"
+        android:text="@{viewModel.userName}"
+        android:onTextChanged="@{viewModel.onTextChangedName}"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#eee"
+        android:textSize="17sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:text="Mobile No"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textColorHint="#eee"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:hint="Mobile No"
+        android:inputType="phone"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@android:color/black"
+        android:layout_marginEnd="20dp"
+        android:text="@{viewModel.mobNo}"
+        android:onTextChanged="@{viewModel.onTextChangedMobileNo}"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/green_rect"
+        android:textSize="17sp" />
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:text="Flat No"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:textColorHint="#eee"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:hint="Flat No"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@{viewModel.flatNo}"
+        android:textColor="@android:color/black"
+        android:onTextChanged="@{viewModel.onTextChangedFlatNo}"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/green_rect"
+        android:textSize="17sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:text="Building Name/No"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:textColorHint="#eee"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:hint="Building Name/No"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@android:color/black"
+        android:text="@{viewModel.buildingName}"
+        android:onTextChanged="@{viewModel.onTextChangedBuildingNo}"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/green_rect"
+        android:textSize="17sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/submitbtn"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="5dp"
+        android:onClick="@{()-> viewModel.submit()}"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+</layout>

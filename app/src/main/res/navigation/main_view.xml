@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_view"
+    app:startDestination="@id/loginView">
+
+    <fragment
+        android:id="@+id/loginView"
+        android:name="com.softgates.recharge.loginview.LoginView"
+        android:label="LoginView" >
+        <action
+            android:id="@+id/action_loginView_to_couponActivity"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_loginView_to_optionView"
+            app:destination="@id/optionView" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/register"
+        android:name="com.softgates.recharge.reguser.RegisterView"
+        android:label="CouponActivity" >
+        <action
+            android:id="@+id/action_couponActivity_to_planListView"
+            app:destination="@id/planListView" />
+    </fragment>
+    <fragment
+        android:id="@+id/planListView"
+        android:name="com.softgates.recharge.planlist.PlanListView"
+        android:label="PlanListView">
+
+        <argument
+            android:name="name"
+            app:argType="string"/>
+
+        <argument
+            android:name="mobileno"
+            app:argType="string"/>
+
+        <argument
+            android:name="flatno"
+            app:argType="string"/>
+
+        <argument
+            android:name="buildingname"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_planListView_to_thankuView"
+            app:destination="@id/thankuView"
+      />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/thankuView"
+        android:name="com.softgates.recharge.thanku.ThankuView"
+        android:label="ThankuView">
+        <argument
+            android:name="username"
+            app:argType="string"/>
+        <argument
+            android:name="password"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_thankuView_to_register"
+            app:destination="@id/optionView"
+            app:popUpTo="@+id/optionView"
+            app:popUpToInclusive="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/optionView"
+        android:name="com.softgates.recharge.optionview.OptionView"
+        android:label="OptionView" >
+        <action
+            android:id="@+id/action_optionView_to_register"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_optionView_to_existingView"
+            app:destination="@id/existingView" />
+    </fragment>
+    <fragment
+        android:id="@+id/existingView"
+        android:name="com.softgates.recharge.existing.ExistingView"
+        android:label="ExistingView" >
+        <action
+            android:id="@+id/action_existingView_to_thankuView"
+            app:destination="@id/thankuView" />
+    </fragment>
+
+</navigation>

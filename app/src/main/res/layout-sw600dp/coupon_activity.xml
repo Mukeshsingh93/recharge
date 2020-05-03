@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardsize"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginEnd="@dimen/thirty"
+        android:background="@drawable/yellow_rect"
+        android:onClick="sendMessage">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="15 days unliminted"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_fourteen"
+            android:textStyle="bold"
+            app:textAllCaps="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardsize"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginEnd="@dimen/thirty"
+        android:onClick="sendMessage"
+        android:background="@drawable/yellow_rect">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="17 days unliminted"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/textsize_fourteen"
+            android:textColor="@android:color/black"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginEnd="@dimen/thirty"
+        android:onClick="sendMessage"
+
+        android:background="@drawable/yellow_rect">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="20 days unlimited"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/textsize_fourteen"
+            android:textColor="@android:color/black"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardsize"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginEnd="@dimen/thirty"
+        android:onClick="sendMessage"
+        android:background="@drawable/yellow_rect">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="30 days unlimited"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/textsize_fourteen"
+            android:textColor="@android:color/black"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardsize"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginEnd="@dimen/thirty"
+        android:onClick="sendMessage"
+
+        android:background="@drawable/yellow_rect">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="27 days limited"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/textsize_fourteen"
+            android:textColor="@android:color/black"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardsize"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginEnd="@dimen/thirty"
+        android:onClick="sendMessage"
+        android:background="@drawable/yellow_rect">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="27 days unlimited"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/textsize_fourteen"
+            android:textColor="@android:color/black"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardsize"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginEnd="@dimen/thirty"
+        android:onClick="sendMessage"
+        android:visibility="gone"
+        android:background="@drawable/yellow_rect">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="997785545554545"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/textsize_fourteen"
+            android:textColor="@android:color/black"
+            />
+    </RelativeLayout>
+</LinearLayout>

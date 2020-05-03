@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingBottom="20dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginStart="@dimen/ten">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan Name : "
+
+            android:textSize="@dimen/textsize_etn"
+            android:textColor="@color/textbold_color"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/planname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan Name"
+            android:textColor="@color/darkgray"
+            android:layout_marginStart="@dimen/ten"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        android:layout_marginTop="@dimen/five"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginStart="@dimen/ten">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan Time : "
+            android:textSize="@dimen/textsize_etn"
+            android:textColor="@color/textbold_color"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/plantime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan Name"
+            android:layout_marginStart="@dimen/fifteen"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        android:layout_marginTop="@dimen/five"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginStart="@dimen/ten">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data : "
+            android:textSize="@dimen/textsize_etn"
+            android:textColor="@color/textbold_color"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/plandata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan Name"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        android:layout_marginTop="@dimen/five"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginStart="@dimen/ten">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description : "
+            android:textSize="@dimen/textsize_etn"
+            android:textColor="@color/textbold_color"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan Name description of the value"
+            android:layout_marginEnd="@dimen/ten"
+            />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/thanksforregistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/thankuforregisration"
+        app:layout_constraintEnd_toEndOf="@+id/thankuforregisration"
+        app:layout_constraintTop_toBottomOf="@+id/thankuforregisration"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        />
+
+
+
+
+    <!--    <View
+              android:layout_width="match_parent"
+              android:layout_height="20dp"/>-->
+
+
+</LinearLayout>

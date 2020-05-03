@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.softgates.recharge.existing.ExistingViewModel" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/bg">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/searchbymobilenumber"
+            android:gravity="bottom"
+            android:fontFamily="@font/popreg"
+            android:layout_marginTop="@dimen/twoenty"
+            android:layout_marginStart="20dp"
+            android:textSize="@dimen/textsize_etn"
+            android:textColor="@android:color/white"
+            />
+
+
+        <EditText
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:hint="@string/searchbymobilenumber"
+            android:inputType="phone"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/green_rect"
+            android:textSize="17sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:padding="@dimen/ten"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsize_sixteen"
+            android:textColor="@color/orabgetext"
+            />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/searchbyname"
+            android:gravity="bottom"
+            android:fontFamily="@font/popreg"
+            android:layout_marginStart="20dp"
+            android:textSize="@dimen/textsize_etn"
+            android:textColor="@android:color/white"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/green_rect"
+            android:inputType="phone"
+            android:paddingStart="10dp"
+            android:hint="@string/searchbyname"
+            android:paddingLeft="10dp"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:elevation="@dimen/ten"
+            android:layout_marginStart="@dimen/fifty"
+            android:layout_marginEnd="@dimen/fifty"
+            android:layout_marginTop="@dimen/twoenty"
+            android:background="@drawable/gradient"
+            android:layout_gravity="center">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/planrecyclerview"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/ten"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</layout>

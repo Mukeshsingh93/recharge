@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Want, "
+            android:layout_marginStart="@dimen/ten"
+            android:textColor="@color/orabgetext"
+            android:fontFamily="@font/popreg"
+            android:textSize="18sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to make a payment"
+            android:textSize="18sp"
+            android:fontFamily="@font/popreg"
+            android:textColor="@color/supportcolodddr"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose"
+        android:textSize="10sp"
+        android:layout_marginStart="@dimen/ten"
+        android:fontFamily="@font/popreg"
+        android:textColor="@color/supportcolodddr"
+        />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="10sp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/popreg"
+            android:textColor="@color/orabgetext"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="if you want to make payment"
+            android:textSize="10sp"
+            android:fontFamily="@font/popreg"
+            android:textColor="@color/supportcolodddr"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/yes"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient"
+        android:layout_marginStart="@dimen/fifty"
+        android:layout_marginEnd="@dimen/fifty"
+        android:layout_marginTop="@dimen/twoenty"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="YES"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_fourteen"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/no"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        android:layout_marginStart="@dimen/fifty"
+        android:layout_marginEnd="@dimen/fifty"
+        android:layout_marginTop="@dimen/twoenty"
+        android:layout_marginBottom="@dimen/twoenty">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="NO"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_fourteen"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

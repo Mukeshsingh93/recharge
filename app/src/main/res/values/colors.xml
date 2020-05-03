@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#18293e</color>
+    <color name="colorAccent">#00e676</color>
+    <color name="green">#00e676</color>
+    <color name="lighttextcolor">#9E9E9E</color>
+    <color name="darkgray">#616161</color>
+    <color name="textbold_color">#000000</color>
+    <color name="line">#E0E0E0</color>
+    <color name="bg">#0a1c33</color>
+    <color name="supportcolor">#4c5969</color>
+    <color name="orabgetext">#fcb364</color>
+    <color name="supportcolodddr">#406189</color>
+    <color name="supporfftcolodddr">#4c5969</color>
+    <color name="edittextbg">#18293e</color>
+    <color name="textcolor">#4c5969</color>
+    <color name="outline">#213d61</color>
+
+    <color name="exisitinguser">#18293D</color>
+
+</resources>

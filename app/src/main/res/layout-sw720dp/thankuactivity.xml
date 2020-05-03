@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+   <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/thanku"
+        android:layout_marginTop="100dp"
+        />-->
+
+  <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/thankutext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanku You"
+        android:textSize="42sp"
+      android:layout_marginTop="150dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+      android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/plscheckmobileno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Please check your mobile for username and password"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/thankutext"
+        android:textStyle="normal"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Username: muk7856"
+        android:textSize="14sp"
+        android:gravity="left"
+        android:layout_below="@+id/plscheckmobileno"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Password: pass78651"
+        android:textSize="14sp"
+        android:gravity="left"
+        android:layout_below="@+id/username"
+        android:textStyle="bold"
+        />
+
+    </LinearLayout>

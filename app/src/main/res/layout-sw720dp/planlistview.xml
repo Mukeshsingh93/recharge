@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.softgates.recharge.network.PlanList" />
+
+        <variable name="index" type="int" />
+
+        <variable
+            name="clickListener"
+            type="com.softgates.recharge.planlist.OnClick" />
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardsize"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginEnd="@dimen/thirty"
+        android:layout_marginBottom="@dimen/twoenty"
+        android:orientation="vertical"
+        android:background="@drawable/yellow_rect"
+        android:onClick="@{() -> clickListener.onClick(viewModel,index)}">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="@dimen/fifteen"
+                android:layout_alignParentStart="true"
+                android:text="@{viewModel.plan_name}"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_fourteen"
+                app:textAllCaps="true" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/info"
+                    android:onClick="@{() -> clickListener.onDesc(viewModel,index)}"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_marginBottom="@dimen/five"
+                    android:layout_marginEnd="@dimen/fifteen"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
+</layout>

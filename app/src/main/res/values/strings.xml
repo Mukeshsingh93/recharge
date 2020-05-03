@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Smart Network</string>
+    <string name="nointernet">No internet Connection</string>
+    <string name="name">NAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="submit">SUBMIT</string>
+    <string name="mobileno">MOBILE NUMBER</string>
+    <string name="flatno">FLAT NUMBER</string>
+    <string name="buildingno">BUILDING NAME</string>
+    <string name="thankutext"><![CDATA[For the Payment, Please find the User name & Password below]]></string>
+    <string name="existingcustomer">EXISTING CUSTOMER</string>
+    <string name="newcustomer">NEW CUSTOMER</string>
+    <string name="refilyourpackage">REFILL YOUR PACKAGE</string>
+    <string name="entermobno">Enter Mobile Number</string>
+    <string name="searchbyname">Search By Name</string>
+    <string name="searchbymobilenumber">Search By Mobile Number</string>
+    <string name="cash">CASH</string>
+    <string name="credit">CREDIT</string>
+    <string name="buildingnamecolon">"BUILDING NAME : "</string>
+    <string name="flatnocolon">"FLAT NUMBER : "</string>
+    <string name="useridcolon">"USER ID : "</string>
+    <string name="passwordcolon">"PASSWORD : "</string>
+
+</resources>
