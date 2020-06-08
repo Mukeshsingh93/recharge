@@ -69,10 +69,15 @@ class LoginViewModel (val sharedPreferences: SharedPreferences,
     init {
         _sessionEx.value =0
         _notifyView.value=0
-        _userName.value="MUK2819"
+//       _userName.value="MUK2819"
+   //     _userName.value="TEST4614"
+        _userName.value=""
 //        _userName.value=""
-        _pin.value="123456"
+    //     _pin.value="Test@#2020"
+         _pin.value=""
+//        _pin.value="123456"
         Log.e("APIRESPONSE","wishlist api is called...")
+     //   gitgitApi()
     }
 
     fun onTextChangedEmail(s: CharSequence, start: Int, before: Int, count: Int) {
@@ -103,7 +108,7 @@ class LoginViewModel (val sharedPreferences: SharedPreferences,
             _userName.value!!.isEmpty() -> _message.value="The username field is required."
       //      !ValidationUtil.isEmailValid(_email.value.toString()) ->_message.value="The Email address is not valid"
             _pin.value!!.isEmpty() -> _message.value="The password field is required."
-            else -> loginApi()
+            else -> loginApis()
         }
     }
 
@@ -149,9 +154,52 @@ class LoginViewModel (val sharedPreferences: SharedPreferences,
         }
     }
 
+    fun loginApis()
+    {
+        if(!Constant.connected(context))
+        {
+            _message.value= context.resources.getString(R.string.nointernet)
+        }
+        else
+        {
+            _status.value = ApiStatus.LOADING
+            coroutineScope.launch {
+                // Get the Deferred object for our Retrofit request
+                var getPropertiesDeferred = RechargeApis.retrofitService.logins()
+                try {
+                    val response = getPropertiesDeferred.await()
+                    Log.e(Constant.APIRESPONSE,"login api response is......"+response.toString())
+                    Log.e(Constant.APIRESPONSE,"wishlistapi api response is......"+response.toString())
+                    _status.value = ApiStatus.DONE
+                    if(response.status==Constant.SUCCEESSSTATUS)
+                    {
+                        //   _message.value= response.message
+                        sharedPreferences.edit { putString(Constant.USERID,response.userData!!.id) }
+                        _navigateToScreen.value=3
+                    }
+                    else
+                    {
+                        _message.value= response.message
+                    }
+                }
+                catch (e: Exception) {
+                  //  _status.value = ApiStatus.ERROR
+                   // _message.value= "Api Failure "+e.message
+               //   Log.e(Constant.APIRESPONSE,"recharge recarge login api failure response is......"+e.message.toString())
+                    if(e.message.toString().equals("HTTP 404 Not Found"))
+                    {
+
+                    }
+                    else
+                    {
+                        loginApi()
+                    }
+                }
+            }
+        }
+    }
+
     fun complete() {
-
         _navigateToScreen.value=0
-
     }
 }

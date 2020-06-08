@@ -51,7 +51,6 @@ class RegisterView : Fragment()
                 Toast.makeText(activity,it.toString(), Toast.LENGTH_SHORT).show()
             }
         })
-
         return binding.root
     }
 }

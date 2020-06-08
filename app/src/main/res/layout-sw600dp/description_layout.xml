@@ -17,7 +17,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Plan Name : "
-
             android:textSize="@dimen/textsize_etn"
             android:textColor="@color/textbold_color"
             />
@@ -65,6 +64,7 @@
             android:layout_marginStart="@dimen/fifteen"
             />
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -92,10 +92,44 @@
             android:layout_height="wrap_content"
             android:text=""
             android:textSize="@dimen/textsize_fourteen"
+            />
+    </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginStart="@dimen/ten">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price : "
+            android:textSize="@dimen/textsize_etn"
+            android:textColor="@color/textbold_color"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
             />
 
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"

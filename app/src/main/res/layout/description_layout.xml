@@ -26,7 +26,7 @@
             android:id="@+id/planname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Plan Name"
+            android:text=""
             android:textColor="@color/darkgray"
             android:layout_marginStart="@dimen/ten"
             />
@@ -59,7 +59,7 @@
             android:id="@+id/plantime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Plan Name"
+            android:text=""
             android:layout_marginStart="@dimen/fifteen"
             />
     </LinearLayout>
@@ -91,7 +91,7 @@
             android:id="@+id/plandata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Plan Name"
+            android:text=""
             />
 
     </LinearLayout>
@@ -113,6 +113,36 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Price : "
+            android:textSize="@dimen/textsize_etn"
+            android:textColor="@color/textbold_color"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        android:layout_marginTop="@dimen/five"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginStart="@dimen/ten">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Description : "
             android:textSize="@dimen/textsize_etn"
             android:textColor="@color/textbold_color"
@@ -122,7 +152,7 @@
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Plan Name description of the value"
+            android:text=""
             android:layout_marginEnd="@dimen/ten"
             />
 
@@ -141,13 +171,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginEnd="60dp"
         />
-
-
-
-
     <!--    <View
               android:layout_width="match_parent"
               android:layout_height="20dp"/>-->
-
-
 </LinearLayout>

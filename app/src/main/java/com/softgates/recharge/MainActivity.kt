@@ -34,10 +34,10 @@ class MainActivity : AppCompatActivity() {
             )
             return
         }
-        var IMEINumber:String  = telephonyManager.deviceId
+//        var IMEINumber:String  = telephonyManager.deviceId
 //        var IMEINumbesr:String  = telephonyManager.imei
-        Log.e("LOGINID","Android id is......"+android_id)
-        Log.e("LOGINID","Android imei no is......"+IMEINumber)
+ //       Log.e("LOGINID","Android id is......"+android_id)
+      //  Log.e("LOGINID","Android imei no is......"+IMEINumber)
       //  Log.e("LOGINID","Android imei no final is......"+IMEINumbesr)
     }
 }

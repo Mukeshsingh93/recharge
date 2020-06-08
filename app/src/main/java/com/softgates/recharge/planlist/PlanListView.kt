@@ -144,6 +144,7 @@ class PlanListView : Fragment()
         dialog.plantime.text=data.plan_time
         dialog.plandata.text=data.data
         dialog.description.text=data.description
+        dialog.price.text=data.price
       /*  dialogView.thanksregistration_btn.setOnClickListener {
             dialog.hide()
         }*/

@@ -16,6 +16,9 @@ var plan_time: String? = null,
 @Json(name="data")
     var data: String? = null,
 
+    @Json(name="price")
+    var price: String? = null,
+
 @Json(name="description")
 var description: String? = null
 

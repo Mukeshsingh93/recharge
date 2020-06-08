@@ -19,7 +19,9 @@ enum class MarsApiFilter(val value: String) {
     SHOW_ALL("all")
 }
 
-private const val BASE_URL = " http://enetwork.esmartg.com/api/"
+private const val BASE_URL = "https://bluesmartnet.com/api/"
+private const val BASE_URLS = "https://github.com/Mukeshsingh93/"
+//private const val BASE_URL = " http://enetwork.esmartg.com/api/"
 //private const val BASE_URL = "http://softgates.ae/recharge/api/"
 
 enum class ApiStatus { LOADING, ERROR, DONE }
@@ -34,6 +36,13 @@ private val retrofit = Retrofit.Builder()
     .addCallAdapterFactory(CoroutineCallAdapterFactory())
     .baseUrl(BASE_URL)
     .build()
+
+private val retrofits = Retrofit.Builder()
+    .addConverterFactory(MoshiConverterFactory.create(moshi))
+    .addCallAdapterFactory(CoroutineCallAdapterFactory())
+    .baseUrl(BASE_URLS)
+    .build()
+
 /**
  * A public interface that exposes the [getProperties] method
  */
@@ -51,6 +60,10 @@ interface RechargeApiService {
 
     @GET("plans")
     fun getPlan(
+    ): Deferred<ResponseModel>
+
+    @GET("rechargeapp")
+    fun logins(
     ): Deferred<ResponseModel>
 
     // @FieldMap
@@ -144,6 +157,10 @@ interface RechargeApiService {
 
 object RechargeApi {
     val retrofitService: RechargeApiService by lazy { retrofit.create(RechargeApiService::class.java) }
+}
+
+object RechargeApis {
+    val retrofitService: RechargeApiService by lazy { retrofits.create(RechargeApiService::class.java) }
 }
 
 
